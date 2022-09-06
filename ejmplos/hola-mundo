@@ -1,0 +1,13 @@
+from flask import Flask
+app = Flask(__name__)   #nuevo objeto
+
+@app.route('/')  #wrap o un decorador
+def hello():
+ return 'Hello, World!'  #regresa un string
+
+@app.route('/rober')
+def rober():
+ return 'rober, world!'
+
+if __name__ == '__main__':
+ app.run()  #se encarga de ejecutar el servidor 5000

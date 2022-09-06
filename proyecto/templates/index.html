@@ -1,0 +1,41 @@
+{% extends "base/base.html" %}
+
+{% block title %} {{title}} {%endblock%}
+
+{% block content %}
+
+
+
+
+    {% from "macro.html" import render_field%}
+    
+<!--todo esto lo puse yo-->
+    <link rel="stylesheet" type="text/css"href="{{ url_for("static", filename="css/style2.css")}}">
+
+             <!--esta linea era la que me faltaba para que me muestre el error-->
+        <form name="sentmessage" id="contactform" method="POST" 
+            <div class="container">
+                <div class="form-signin">       
+                    <h2 class="form-signin-heading">Please login</h2>
+                    {{render_field(form.username, class = "form-control")}}
+                    {{render_field(form.email, class = "form-control")}}
+                    {{render_field(form.comment, class = "form-control")}}
+
+            {{form.honeypot}}
+                        
+                    <label class="checkbox">
+                    
+                    </label>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+                </div>
+            </div>
+        </form>
+        </div>
+    
+        
+    
+
+
+{%endblock%}
+
+

@@ -1,0 +1,17 @@
+
+body{background-color: rgb(178, 237, 151);}
+
+
+.logo {
+    padding: 70px;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.block-content {
+    background-color: rgb(14, 207, 245);
+}
+
+.row  {
+    background-color: rgb(82, 79, 74);
+}
+
