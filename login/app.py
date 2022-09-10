@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    title = "Login con Flask"
+    title = "Login con Flask."
     return render_template("index.html", title=title)
 
 
